@@ -1,6 +1,6 @@
 {
   "name": "mfe-overrides",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MFE overrides CLI",
   "main": "index.js",
   "bin": {

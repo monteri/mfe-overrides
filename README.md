@@ -11,8 +11,7 @@ Install dependencies globally:
 ## Commands
 
 ### 1. Commit
-
-Commit changes in the specified path to a version control system.
+Можна робити зміни в MFE і потім використати цю команду, щоб перенести усі змінені/додані файли за вказаним шляхом. Ідея, щоб вказати `frontend-build/overrides`  і автоматично буде створено дерево відповідно до MFE, в якій йде робота.
 
 ```bash
 mfe-cli commit <path>
@@ -20,8 +19,7 @@ mfe-cli commit <path>
 ```
 
 ### 2. List Changes
-List changes in the repository.
-
+Перелік ченжів в MFE (для перегляду перед `commit`).
 
 ```bash
 Copy code
@@ -29,7 +27,7 @@ mfe-cli list-changes
 ```
 
 ### 3. Apply Overrides
-Apply changes from the specified overrides path to the current project.
+Зворотній процес до `commit`, щоб скопіювати/створити файли, які знаходяться в overrides
 
 
 ```bash
@@ -40,6 +38,7 @@ mfe-cli apply-overrides <path>
 
 ### 4. Install Frontend Build
 Clone a Git repository, remove the node_modules directory, and install @edx/frontend-build from the local repository.
+Вставляємо `url` форкнутого білда і він встановиться в MFE і в `package.json` вкажеться шлях до нього. Далі можна робити зміни.
 
 ```bash
 Copy code
