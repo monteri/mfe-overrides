@@ -1,7 +1,7 @@
 {
   "name": "mfe-overrides",
   "version": "1.0.0",
-  "description": "",
+  "description": "MFE overrides CLI",
   "main": "index.js",
   "bin": {
     "mfe-cli": "./bin/mfe-cli.js"
@@ -9,11 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "monteri",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
-    "inquirer": "^8.2.6",
     "simple-git": "^3.20.0"
   }
 }
