@@ -3,7 +3,8 @@ const simpleGit = require('simple-git');
 function getChangedFiles(callback) {
   const git = simpleGit();
 
-  git.status((err, status) => {
+  // Use the 'all' option to include untracked files
+  git.status(['-u', 'all'], (err, status) => {
     if (err) {
       console.error('An error occurred while checking Git status:', err.message);
       process.exit(1);
